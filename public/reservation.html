@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>CSShoes - Réservations de paires customisées</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" href="images/csshoes.png">
+</head>
+
+<body>
+    <header>
+		<a href="index.html" id="logo"><img src="images/logo.png" alt="Logo de la start-up CSShoes"></a>
+		<div class="lien">
+			<a href="index.html" class="lien">Accueil</a>
+		</div>
+		<div>
+			<a href="magasin.html" class="lien">Magasin</a>
+		</div>
+		<div>
+			<p class="lien">Réservations</p>
+		</div>
+	</header>
+
+	<main>
+		<h1>Réservations de paires customisées</h1>
+	
+		<section class="reservation">
+			
+			<h2>Vous avez toujours rêvé de posséder une paire à <strong>votre</strong> image ? Vous êtes au bon endroit.</h2>
+			<h3>Ici, le chef c'est vous. Choisissez une taille, des couleurs, des motifs et un matériau, et le tour est joué !</h3>
+			
+			<section id="chaussures">
+
+				<div class="chaussures">
+					<img src="images/air1.webp" alt="Image de Chaussure urbaine appelé sneakers">
+				</div>
+
+				<div class="chaussures">
+					<img src="images/air2.webp" alt="Image de Chaussure urbaine appelé sneakers">
+				</div>
+
+				<h3>Vous pouvez par exemple choisir un message à inscrire sur votre paire. Ici, le client a simplement choisi d'inscrire <cite>"Air"</cite>.</h3>
+
+			</section>
+			
+			<section id="form">
+				
+				<h2>C'est à vous !</h2>
+
+				<form method="post" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+
+					<p> Les champs indiqués par une <strong>*</strong> sont <strong>obligatoires</strong>.</p>
+
+					<div class="champ">
+						<label for="email">Votre adresse email * </label>
+						  <input id="email" type="email" name="email" required>
+					</div>
+					
+					<div class="champ">
+						<label for="pointure">Pointure (tailles disponibles : du 37 au 50, au demi près) * </label>
+						<input type="number" name="pointure" id="pointure" min="37" max="50" step="0.5" required>
+				    </div>
+					
+					<div>
+						<label id="labelcolor">Les couleurs de votre choix (il est conseillé d'en choisir au maximum 3) * </label>
+						<fieldset id="couleurs">
+							<div class="choixcouleurs">
+								<label><input name="couleur" type="checkbox" id="noir" value="noir">Noir</label>
+								<label><input name="couleur" type="checkbox" id="gris" value="gris">Gris</label>
+								<label><input name="couleur" type="checkbox" id="blanc" value="blanc">Blanc</label>
+								<label><input name="couleur" type="checkbox" id="marron" value="marron">Marron</label>
+							</div>
+							
+							<div class="choixcouleurs">
+								<label><input name="couleur" type="checkbox" id="bleu" value="bleu">Bleu</label>
+								<label><input name="couleur" type="checkbox" id="rouge" value="rouge">Rouge</label>
+								<label><input name="couleur" type="checkbox" id="jaune" value="jaune">Jaune</label>
+								<label><input name="couleur" type="checkbox" id="orange" value="orange">Orange</label>
+							</div>
+							
+							<div class="choixcouleurs">
+								<label><input name="couleur" type="checkbox" id="vert" value="vert">Vert</label>
+								<label><input name="couleur" type="checkbox" id="beigr" value="beige">Beige</label>
+								<label><input name="couleur" type="checkbox" id="rose" value="rose">Rose</label>
+								<label><input name="couleur" type="checkbox" id="violet" value="violet">Violet</label>
+							</div>
+
+							<div class="choixcouleurs">
+								<label>Autre...<input name="couleur" type="text" id="autrecouleur"></label>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="champ">
+						<label>Matériau *</label>
+						<fieldset>
+							<label><input name="materiau" type="radio" id="cuir" value="cuir">Cuir</label>
+							<label><input name="materiau" type="radio" id="toile" value="toile">Toile</label>
+							<label><input name="materiau" type="radio" id="caoutchouc" value="caoutchouc">Caoutchouc</label>
+						</fieldset>
+					</div>
+
+					<div class="champ">
+						<label>Motif</label>
+						<fieldset>
+							<label><input name="motif" type="radio" id="spirales" value="spirales">Spirales</label>
+							<label><input name="motif" type="radio" id="damier" value="damier">Damier</label>
+							<label><input name="motif" type="radio" id="vagues" value="vagues">Vagues</label>
+							<label><input name="motif" type="radio" id="éclairs" value="eclairs">Éclairs</label>
+							<label id="motif">Autre...     <input name="autremotif" type="text" id="autremotif"></label>
+						</fieldset>
+					</div>
+
+					<div class="champ message">
+						<label for="message">Message à inscrire sur la paire (présent du côté extérieur de chaque basket)</label>
+						<textarea name="message" id="message" cols="20" rows="2"></textarea>
+					</div>
+
+					<div class="champ message">
+						<label for="handicap">Précisions en cas de handicap</label>
+						<textarea name="handicap" id="handicap" cols="30" rows="6"></textarea>
+					</div>
+
+					<div class="champ message">
+					  <label for="precisions">Précisions additionnelles</label>
+					  <textarea name="precisions" id="precisions" cols="30" rows="6"></textarea>
+					</div>
+					  
+					<button type="submit">Réserver</button>
+				
+				</form>
+			</section>
+		</section>
+
+
+	</main>
+
+	<footer>
+		<a href="apropos.html">À propos de CSShoes</a>
+
+		<a href="https://creativecommons.org/licenses/by-sa/3.0/fr/">
+			<img class="pied" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="Logo Creative Commons CC BY-SA">
+		</a>
+
+		<a href="https://iut.univ-lyon1.fr/">
+			<img class="pied" src="images/logoiut.png" alt="Logo IUT Lyon 1">
+		</a>
+
+		<div id=liste>
+			<p>Nous contacter :</p>
+
+			<ul>
+				<li>Adresse : 1, rue de la Technologie - 69100 VILLEURBANNE</li>
+				<li>Téléphone : 04 69 69 69 69</li>
+				<li>Mail : csshoes.pro@mail.fr</li>
+			
+			</ul>
+		</div>
+	
+	</footer>
+	
+</body>
+</html>

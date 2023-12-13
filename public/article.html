@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+	<title>CSShoes - Article n°800597541</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" href="images/csshoes.png">
+</head>
+
+<body>
+    <header>
+		<a href="index.html" id="logo"><img src="images/logo.png" alt="Logo de la start-up CSShoes"></a>
+		<div class="lien">
+			<a href="index.html" class="lien">Accueil</a>
+		</div>
+		<div>
+			<a href="magasin.html" class="lien">Magasin</a>
+		</div>
+		<div>
+			<a href="reservation.html" class="lien">Réservations</a>
+		</div>
+	</header>
+
+    <main>
+        <h1>Article n°800597541</h1>
+
+        <section id="article">
+            <h2>Fiche produit</h2>
+
+            <img src="images/classique.webp" alt="baskets classiques">
+            
+            <table>
+                <tr><td colspan="2" id="titretable">La Classique</td></tr>
+                <tr><td colspan="2" id="descriptiontable">Une paire de chaussures on ne peut plus banale, mais on ne change pas une équipe qui gagne.</td></tr>
+                <tr><th>Prix</th><td>30 €</td></tr>
+                <tr><th>Pointures disponibles</th>
+                    <td>
+                        <ul>
+                            <li>7 paires en taille 38,5</li>
+                            <li>3 paires en taille 42</li>
+                            <li>6 paires en taille 43</li>
+                            <li>1 paire en taille 43,5</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr><th>Couleurs disponibles</th>
+                    <td>
+                        <ul>
+                            <li>Gris</li>
+                            <li>Noir</li>
+                            <li>Blanc</li>
+                            <li>Bleu</li>
+                            <li>Rouge</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Commande</th>
+                    <td id="casecommande">
+                        <form method="post" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+                            <div class="commandearticle">
+                                <label for="couleur">Couleur : </label>
+                                <select name="couleur" id="couleur">
+                                    <option value="default">Choisir...</option>
+                                    <option value="gris">Gris</option>
+                                    <option value="noir">Noir</option>
+                                    <option value="blanc">Blanc</option>
+                                    <option value="bleu">Bleu</option>
+                                    <option value="rouge">Rouge</option>
+                                </select>
+                            </div>
+                            <div class="commandearticle">
+                                <label for="pointurearticle">Pointure (du 37 au 50, au demi près) : </label>
+                                <input type="number" name="pointure" id="pointurearticle" min="37" max="50" step="0.5" required>
+                            </div>
+                            <button type="submit">Ajouter au panier</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <a href="apropos.html">À propos de CSShoes</a>
+
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/fr/">
+            <img class="pied" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="Logo Creative Commons CC BY-SA">
+        </a>
+    
+        <a href="https://iut.univ-lyon1.fr/">
+            <img class="pied" src="images/logoiut.png" alt="Logo IUT Lyon 1">
+        </a>
+    
+        <div id=liste>
+            <p>Nous contacter :</p>
+
+            <ul>
+                <li>Adresse : 1, rue de la Technologie - 69100 VILLEURBANNE</li>
+                <li>Téléphone : 04 69 69 69 69</li>
+                <li>Mail : csshoes.pro@mail.fr</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>

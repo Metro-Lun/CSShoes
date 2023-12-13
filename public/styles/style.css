@@ -1,0 +1,428 @@
+/* DÉFINITION DES POLICES À UTILISER*/
+@font-face {
+    font-family: "VarelaRound";
+    src: url('VarelaRound-Regular.ttf');
+}
+
+@font-face {
+    font-family: "KomikaText";
+    src: url('KOMTXTB_.ttf');
+}
+
+/* GENERAL */
+body{
+	background-color: #e9e9e9;
+    font-family: "VarelaRound","Times New Roman", Times, sans-serif, serif;
+    margin: 0px;
+}
+
+/* TITRES */
+
+p,h1,h2,h3{
+	color: rgb(77, 77, 77);
+    text-align: center;
+    font-size: 25px;
+}
+
+h1,h2,h3 {
+    font-family: "KomikaText", "Times New Roman", Times, sans-serif, serif;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#chaussures h3 {
+    grid-area: 2 / 1 / 3 / span 2;
+}
+
+/* HEADER ET FOOTER */
+header p, footer p {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer img {
+    width: 100px;
+}
+
+/* LIENS */
+a {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(65, 26, 209);
+    padding: 20px;
+}
+
+main a {
+    padding: 0px;
+}
+
+.aveclien {
+    font-size: 30px;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+button a {
+    color: black;
+}
+
+.lien {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* IMAGES */
+img {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#liste {
+    display: grid;
+    text-align: left;
+    align-items: start;
+}
+
+#valeurs {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / auto 2fr;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    gap: 60px;
+}
+
+.phare img:hover {
+    border: 1px solid darkgray;
+}
+
+/* BOUTONS */
+button, .bouton {
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 38px;
+    border-radius : 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:hover, .bouton:hover {
+    border: 1px solid #e9e9e9;
+    text-decoration: none;
+}
+
+.ingrid {
+    display: grid;
+    grid-template: 350px 240px 100px / 1fr;
+    padding-top: 20px;
+}
+
+/* TABLE */
+table,td,th {
+    border : 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+
+table {
+    border: 10px solid black;
+}
+
+td,th {
+    padding: 10px;
+}
+
+#titretable {
+    font-family: "KomikaText", "Times New Roman", Times, sans-serif, serif;
+    font-size : 50px;
+    padding-bottom: 15px;
+    border: 5px solid black;
+    grid-area : 1 / 1 / 2 / span 2
+}
+
+#descriptiontable {
+    border: none;
+}
+
+#casecommande {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.commandearticle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+#couleur {
+    font-size: 25px;
+}
+
+#article ul {
+    text-align: start;
+}
+
+/* FORMULAIRE */
+#form p {
+    text-align: left;
+    padding-left: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: 'VarelaRound',system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+#labelcolor {
+    grid-area: 1 / 1 / 2 / span 3;
+    font-family: 'VarelaRound',system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+#couleurs {
+    display: grid;
+    grid-template: 100px / 130px 130px 130px 130px;
+    text-align: start;
+    font-family: 'VarelaRound',system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.choixcouleurs {
+    display: flex;
+    flex-direction :column;
+}
+
+#chaussures {
+    display: grid;
+    grid-template: 300px 100px / 2fr 2fr ;
+    justify-content: center;
+}
+
+#sujet, #input {
+    padding: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+fieldset label {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#motif {
+    padding-left: 20px;
+}
+
+/* CSS RESPONSIVE */
+@media screen and (min-width : 1001px) {
+    header img {
+        width: 170px;
+    }
+
+    .phare {
+        display: grid;
+        grid-template: 60px 700px / 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        padding : 15px;
+        height: 800px;
+    }
+
+    .buttongrid{
+        display: flex;
+        vertical-align: bottom;
+    }
+
+    .titrephare {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 35px;
+        grid-area: 1 / 1 / 2 / span 4;
+    }
+
+    .pied {
+        width: 326px;
+    }
+
+    header, footer{
+        text-align: center;
+        display: flex;
+        background-color: #AACAF9;
+        flex: 1;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-around;
+
+    }
+
+    #form {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    #valeurs {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / auto 2fr;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 60px;
+        gap: 60px;
+    }
+
+    #chaussures {
+        display: grid;
+        grid-template: 300px 100px / 2fr 2fr ;
+        justify-content: center;
+    }
+    
+    #chaussures h3 {
+        grid-area: 2 / 1 / 3 / span 2;
+    }
+
+    #article {
+        display: grid;
+        grid-template: 120px 1200px / 1.2fr 1.8fr;
+        padding: 30px;
+    }
+
+    #article img {
+        width: 700px;
+        padding-right : 36px;
+    }
+
+    #article h2 {
+        grid-area: 1 / 1 / 2 / span 2;
+        text-align: start;
+    }
+
+
+}
+
+@media screen and (max-width : 1000px) {
+
+    header img {
+        width: 300px;
+    }
+    .phare{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        padding : 150px;
+        gap: 10px;
+    }
+
+    .pied {
+        width: 400px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: #AACAF9;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: #AACAF9;
+        flex: 1;
+        align-items: center;
+        padding : 50px;
+        justify-content: space-around;
+    }
+
+    #form {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .titrephare {
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 35px;
+    }
+    
+    #article {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .phare p {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    #valeurs {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 60px;
+        gap: 60px;
+    }
+
+    #chaussures {
+        display: grid;
+        grid-template: 250px 300px 100px/ 1fr;
+        justify-content: center;
+    }
+
+    table {
+        margin: 30px;
+    }
+
+    #article img {
+        width: 650px;
+        padding-bottom: 30px;
+    }
+}
